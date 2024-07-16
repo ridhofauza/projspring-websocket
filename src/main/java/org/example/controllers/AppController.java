@@ -21,10 +21,9 @@ public class AppController {
         return "Hello World";
     }
 
-    @ResponseBody
     @RequestMapping("/chatpage")
     public String chatPageHtml(Model model) {
-        return "/static/chatpage.html";
+        return "chatpage";
     }
 
     @MessageMapping("/chat")
